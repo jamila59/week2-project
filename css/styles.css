@@ -1,7 +1,7 @@
 body {
 	font-family: sans-serif;
   font-size: 20px;
-  background-color: black; 
+  background-color: black;
 }
 
 #button:hover {
@@ -31,4 +31,9 @@ body {
 
 .container {
   background-color: #ffccc4
+}
+
+p.questions  {
+  font-style: italic;
+  font-weight: bold;
 }

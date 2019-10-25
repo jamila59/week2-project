@@ -1,4 +1,6 @@
-function check(){
+// $(document).ready(function() {
+function run(){
+
 
     var question1 = document.quiz.question1.value;
   	var question2 = document.quiz.question2.value;
@@ -53,8 +55,15 @@ incorrect--;
 		score = 0;
 	}
 
+// $("#button").click(function() {
+//   $("#number_correct").show();
+//   $("#messege").show();
+//   $("#picture").show();
+//   event.preventDefault();
+// });
 	document.getElementById("after_submit").style.visibility = "visible";
 	document.getElementById("message").innerHTML = messages[score];
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
 	document.getElementById("picture").src = pictures[score];
+event.preventDefault();
 	}
