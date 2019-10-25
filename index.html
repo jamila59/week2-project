@@ -3,9 +3,10 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Quiz</title>
+    <title>Knowledge Quiz</title>
   </head>
   <body>
     <div class="container text-center">
@@ -14,55 +15,39 @@
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <form id="formOne">
         <form action="/action_page.php">
           First name:<br>
           <input type="text" name="firstname" value=""><br>
           Last name:<br>
-          <input type="text" name="lastname" value=""><br><br>
+          <input type="text" name="lastname" value=""><br><br> -->
+
+
+        <p class = "questions">What is the "power-house" of the call?</p>
+        <input id = "textbox" type = "text" name = "question1">
+        <br>
+        <p class = "questions">What is the the Mitochondria's job?</p>
+        <input type = "radio" id = "mc" name = "question2" value = "energy"> To Make energy<br>
+        <input type = "radio" id = "mc" name = "question2" value = "kill"> To kill the Cell<br>
+        <input type = "radio" id = "mc" name = "question2" value = "Enter"> To let molecules into the <br>
+        <br>
+        <p class = "questions">Which of the following describes the structure of the mitochondria?</p>
+
+        <input type = "radio" id = "mc" name = "question3" value = "shape">Head, Shoulders, Knees and Toes<br>
+        <input type = "radio" id = "mc" name = "question3" value = "structure">Outer Membrane, Inner Membrane and theMatrix<br>
+        <input type = "radio" id = "mc" name = "question3" value = "form">The Mitichondria does not have a definite shape<br>
+        <br>
+        <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
         </form>
 
-        <div class="radio">
-          <label>
-            <input id="female" type="radio" name="gender" value="female" checked>
-            Female
-          </label>
+        <div id = "after_submit">
+        <p id = "number_correct"></p>
+        <p id = "message"></p>
+        <img id = "picture">
         </div>
+        </html>
 
-        <div class="radio">
-          <label>
-            <input id="male" type="radio" name="gender" value="male">
-          Male
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input id="other" type="radio" name="gender" value="Other">
-            Other
-          </label>
-        </div>
-
-        <form>
-          <input type="checkbox" name="pronoun1" value="he/him"> He/Him<br>
-          <input type="checkbox" name="pronoun2" value="she/her"> She/Her<br>
-          <input type="checkbox" name="pronoun3" value="they/them"> They/Them<br>
-        </form>
-
-        <br>
-        <select class="form-control" id="transport">
-          <option value="1">Select transport used daily</option>
-          <option value="2">Camel</option>
-          <option value="3">Piggy-Back on friends back</option>
-          <option value="4">Car</option>
-          <option value="4">Bus</option>
-        </select>
-        <br>
-        <div>
-          <button type="submit" class="btn-danger">Click To Find Out!</button>
-        </div>
-    </div>
-  </form>
-  </body>
-</html>
+        </body>
