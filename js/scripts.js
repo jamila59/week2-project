@@ -1,19 +1,21 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     var gender = $("input:radio[name=president]:checked").val();
+    var transport = $("#party").val();
 
-    if (gender === 'female') {
-      alert("female");
-    } else if (gender === 'female') {
-      alert("");
+    if (gender === 'female'  && transport === '2') {
+      alert("Democrat");
+    } else if (gender === 'female'  && transport === '3') {
+      alert("Liberal");
     }
 
-    if (gender === 'male') {
-      alert("male")
+    if (gender === 'male'  && transport === '3') {
+      alert("Republican")
       } else {
-      alert("");
+      alert("Undecided");
     }
-$("#output").text(result);
- event.preventDefault();
+
+
+    event.preventDefault();
   });
   });
