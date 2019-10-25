@@ -12,13 +12,56 @@
       <div class="jumbotron">
       <h1>Quiz</h1>
       </div>
+    </div>
 
+    <div class="container">
       <form id="formOne">
-        <div class="form-group">
-          <label for="name">Enter Name:</label>
-          <input class="form-control" type="text">
+        <form action="/action_page.php">
+          First name:<br>
+          <input type="text" name="firstname" value=""><br>
+          Last name:<br>
+          <input type="text" name="lastname" value=""><br><br>
+        </form>
+
+        <div class="radio">
+          <label>
+            <input id="female" type="radio" name="gender" value="female" checked>
+            Female
+          </label>
         </div>
 
+        <div class="radio">
+          <label>
+            <input id="male" type="radio" name="gender" value="male">
+          Male
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input id="other" type="radio" name="gender" value="Other">
+            Other
+          </label>
+        </div>
+
+        <form>
+          <input type="checkbox" name="pronoun1" value="he/him"> He/Him<br>
+          <input type="checkbox" name="pronoun2" value="she/her"> She/Her<br>
+          <input type="checkbox" name="pronoun3" value="they/them"> They/Them<br>
+        </form>
+
+        <br>
+        <select class="form-control" id="animal">
+          <option value="1">Select transport used daily</option>
+          <option value="2">Camel</option>
+          <option value="3">Piggy-Back on friends back</option>
+          <option value="4">Car</option>
+          <option value="4">Bus</option>
+        </select>
+        <br>
+        <div>
+          <button type="submit" class="btn-danger">Click To Find Out!</button>
+        </div>
     </div>
   </body>
 </html>
