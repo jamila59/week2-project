@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Knowledge Quiz</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Knowledge Quiz</h1>
+    </div>
+
+    <div class=container text-center>
+      <form id = "quiz" name = "quiz">
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname">
+
+      <p class = "questions">
+        What is the "power-house" of the cell?
+      </p>
+      <input id = "textbox" type = "text" name = "question1">
+        <br>
+        <p class = "questions">
+          What is the the Mitochondria's job?
+        </p>
+          <input type = "radio" class = "mc" name = "question2" value = "energy"> To Make energy<br>
+          <input type = "radio" class = "mc" name = "question2" value = "kill"> To kill the Cell<br>
+          <input type = "radio" class = "mc" name = "question2" value = "Enter"> To let molecules into the cell<br>
+        <br>
+        <p class = "questions">
+          Which of the following describes the structure of the mitochondria?
+        </p>
+          <input type = "radio" class = "mc" name = "question3" value = "shape">Head, Shoulders, Knees and Toes<br>
+          <input type = "radio" class = "mc" name = "question3" value = "structure">Outer Membrane, Inner Membrane and the Matrix<br>
+          <input type = "radio" class = "mc" name = "question3" value = "form">The Mitichondria does not have a definite shape<br>
+        <br>
+        <p class = "questions">
+          What does the Mitochondria produce?
+        </p>
+          <input type = "radio" class = "mc" name = "question4" value = "atp">ATP<br>
+          <input type = "radio" class = "mc" name = "question4" value = "dna">DNA<br>
+          <input type = "radio" class = "mc" name = "question4" value = "rna">RNA<br>
+        <br>
+        <p class = "questions">
+          How many mitochondria structures are within a cell of a typicall animal cell?
+        </p>
+          <input type = "radio" class = "mc" name = "question5" value = "1">1-10<br>
+          <input type = "radio" class = "mc" name = "question5" value = "2">100-900<br>
+          <input type = "radio" class = "mc" name = "question5" value = "3">1000-2000<br>
+        <br>
+        <input id = "button" type = "button" value = "I'm finished!" onclick="check();">
+
+      </form>
+      <div id = "after_submit">
+      <p id = "number_correct"></p>
+      <p id = "message"></p>
+      <img id = "picture">
+      </div>
+    </div>
+  </body>
+</html>
