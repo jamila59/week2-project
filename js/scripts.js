@@ -1,4 +1,4 @@
-unction check(){
+function check(){
 
     var question1 = document.quiz.question1.value;
   	var question2 = document.quiz.question2.value;
@@ -14,15 +14,17 @@ unction check(){
 	if (question2 == "energy") {
 		correct++;
   }
+
 	if (question3 === "structure") {
 		correct++;
 	}
+
   if (question4 == "atp") {
     correct++;
   }
   if (question5 == "3") {
     correct++;
-  }
+  } 
 	var pictures = ["img/borat.jpg", "img/fail.jpeg", "img/okay.jpeg"];
 	var messages = ["Great job!", "Meh...", "That is okay!"];
 	var score;
@@ -30,9 +32,11 @@ unction check(){
 	if (correct === 0) {
 		score = 2;
 	}
+
 	if (correct > 0 && correct < 5) {
 		score = 1;
 	}
+
 	if (correct === 5) {
 		score = 0;
 	}
